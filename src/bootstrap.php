@@ -57,5 +57,5 @@ try {
 
     return $html;
 } catch (RouterException $exception) {
-    return $router->executeException($exception->getCode(), APPLICATION_PATH);
+    return $router->executeException($exception, APPLICATION_PATH);
 }
